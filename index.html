@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC - Kaun Banega Crorepati</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="screen">
+        <h1>Welcome to KBC - Kaun Banega Crorepati</h1>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="game-screen" class="screen" style="display: none;">
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit" onclick="submitAnswer()">Submit Answer</button>
+    </div>
+
+    <audio id="background-music" src="background-music.mp3" loop autoplay></audio>
+    <audio id="correct-sound" src="correct-sound.mp3"></audio>
+    <audio id="wrong-sound" src="wrong-sound.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
